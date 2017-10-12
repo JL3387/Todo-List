@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>To-Do list</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <input id="new-todo" type="text" placeholder="Your To-Do"><button id="addButton"><img class="add" src="imgs/add.svg" alt="Add button"/></button><br /><span id = "inputError"></span>
+    <h3>Incomplete To-Dos</h3>
+    <ul id="todoList">
+      <li><input type="checkbox"><label>Go shopping</label><input type="text"><button class="editButton"><img class="edit" src="imgs/edit.svg" alt="Edit button"></button><button class="deleteButton"><img class="delete" src="imgs/delete.svg" alt="Delete button"></button></li>
+    </ul>
+      <h3>Completed To-Dos</h3>
+    <ul id="completedTodos">
+      <li><input type="checkbox" checked><label>Feed dog</label><input type="text"><button class="editButton" disabled=""><img class="edit" src="imgs/edit.svg" alt="Edit button"></button><button class="deleteButton"><img class="delete" src="imgs/delete.svg" alt="Delete button"></button></li>
+    </ul>
+    <button id="clearList">Completely Clear List</button>
+  </div>
+  <script src="js/main.js"></script>
+  </body>
+</html>

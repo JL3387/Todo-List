@@ -1,0 +1,93 @@
+.container {
+  background: #ffffe6;
+  text-align: center;
+  margin: auto;
+  width: 600px;
+  min-height: 800px;
+  position: relative;
+}
+
+/*Button Styles*/
+button:hover{
+  cursor: pointer;
+}
+
+#addButton, .editButton, .deleteButton{
+  vertical-align: middle;
+  border:none;
+  background: none;
+  width: 60px;
+}
+
+.add, .edit, .delete {
+  vertical-align: middle;
+  height: 30px;
+  display: block;
+}
+
+#clearList{
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  border:2px solid black;
+  border-radius: 5px;
+  background: #eddeed;
+  bottom: 0;
+  padding: 0;
+}
+
+
+/*Inputs*/
+#inputError{
+  color: red;
+  font-size: 12px;
+}
+
+input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+}
+
+ul li input[type=text] {
+  margin: auto;
+  display: block;
+  width: 245px;
+  margin-left: 20px;
+  display:none;
+}
+
+ul li.editing input[type=text] {
+  display:inline-block;
+}
+
+ul li.editing label {
+  display:none;
+}
+/*li styling*/
+ul{
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+label {
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+  font-size: 18px;
+  min-width: 250px;
+  margin-left: 20px;
+}
+
+/*Completed list*/
+#completedTodos label {
+  color: #b3b3b3;
+  text-decoration: line-through;
+}
+
+#completedTodos .editButton {
+  cursor: not-allowed;
+}
